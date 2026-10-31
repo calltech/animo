@@ -46,11 +46,7 @@ import { trigger, style, transition, animate, keyframes, query, stagger } from '
   ]
 })
 export class AppComponent {
-  items = [];
-
-  constructor() {
-    this.items = ['Hey this is an item', 'Here is another one', 'This is awesome'];
-  }
+  items: string[] = ['Hey this is an item', 'Here is another one', 'This is awesome'];
 
   pushItem() {
     this.items.push('Oh yeah that is awesome');
@@ -59,4 +55,3 @@ export class AppComponent {
     this.items.pop();
   }
 }
-
